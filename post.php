@@ -26,6 +26,7 @@ try {
   $prepare->execute();
 
   $result = $prepare->fetch();
+  $prepare->fetchAll();
   print_r($result);
 
 } catch (PDOException $e) {
@@ -34,4 +35,5 @@ try {
   var_dump($error);
 
 }
+
 

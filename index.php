@@ -1,3 +1,6 @@
+<?php
+include 'post.php';
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -13,6 +16,7 @@
 <!--記事表示部分-->
 <h2>posts</h2>
 <ul>
+  <?php echo $result; ?>
   <li>
     <h3>post title</h3>
     <p>content</p>
